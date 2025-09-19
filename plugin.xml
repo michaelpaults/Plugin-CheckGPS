@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-os-checkgps" xmlns="http://apache.org/cordova/ns/plugins/1.0" version="1.0.0">
+    <name>CheckGPS</name>
+    <description>Plugin para verificar el estado del GPS</description>
+    <license>Apache-2.0</license>
+    <keywords>cordova,gps,plugin</keywords>
+    <author email="michaelpaults@gmail.com">
+        Michael Torres
+    </author>
+    <engines>
+        <engine name="cordova" version=">=9.0.0"/>
+    </engines>
+    <js-module name="CheckGPS" src="www/checkgps.js">
+        <clobbers target="cordova.plugins.CheckGPS"/>
+    </js-module>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MyPlugin">
+                <param name="android-package" value="cordova.plugins.checkgps.CheckGPS"/>
+            </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/*">
+        <source-file src="src/android/CheckGPS.java" target-dir="src/com/example/checkgps"/>
+    </platform>
+    <platform name="ios">
+        <source-file src="src/ios/CheckGPS.m"/>
+    </platform>
+</plugin>
