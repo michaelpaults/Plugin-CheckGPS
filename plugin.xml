@@ -19,10 +19,9 @@
                 <param name="android-package" value="cordova.plugins.checkgps.CheckGPS"/>
             </feature>
         </config-file>
-        <config-file target="AndroidManifest.xml" parent="/*">
         <source-file src="src/android/CheckGPS.java" target-dir="src/com/example/checkgps"/>
     </platform>
-    <platform name="ios">
+    <!--<platform name="ios">
         <source-file src="src/ios/CheckGPS.m"/>
-    </platform>
+    </platform> -->
 </plugin>
