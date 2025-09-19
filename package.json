@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-myplugin",
+  "version": "1.0.0",
+  "description": "Un ejemplo de plugin para Cordova",
+  "main": "www/checkgps.js",
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "plugin",
+    "outsystems"
+  ],
+  "author": "Michael Torres",
+  "license": "Apache-2.0",
+  "cordova": {
+    "id": "cordova-plugin-os-checkgps",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelpaults/Plugin-CheckGPS"
+  },
+  "bugs": {
+    "url": "https://github.com/michaelpaults/Plugin-CheckGPS/issues"
+  },
+  "homepage": "https://github.com/michaelpaults/Plugin-CheckGPS#readme"
+}
